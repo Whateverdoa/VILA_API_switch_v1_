@@ -1,0 +1,168 @@
+C:\Users\Bgsystem\PycharmProjects\fastApiProject_VILA_API_v1\venv\Scripts\python.exe -m uvicorn main:app --reload
+INFO:     Will watch for changes in these directories: ['C:\\Users\\Bgsystem\\PycharmProjects\\fastApiProject_VILA_API_v1']
+INFO:     Uvicorn running on http://127.0.0.1:8000 (Press CTRL+C to quit)
+INFO:     Started reloader process [192668] using WatchFiles
+INFO:     Started server process [191936]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+INFO:     127.0.0.1:64776 - "POST /collect_printcom_order_item HTTP/1.1" 422 Unprocessable Entity
+INFO:     127.0.0.1:64782 - "POST /collect_printcom_order_item HTTP/1.1" 422 Unprocessable Entity
+INFO:     127.0.0.1:64787 - "POST /collect_printcom_order_item HTTP/1.1" 422 Unprocessable Entity
+INFO:     127.0.0.1:64790 - "POST /collect_printcom_order_item HTTP/1.1" 422 Unprocessable Entity
+INFO:     127.0.0.1:64797 - "POST /collect_printcom_order_item HTTP/1.1" 422 Unprocessable Entity
+INFO:     127.0.0.1:64804 - "POST /collect_printcom_order_item HTTP/1.1" 422 Unprocessable Entity
+INFO:     127.0.0.1:64807 - "POST /collect_printcom_order_item HTTP/1.1" 422 Unprocessable Entity
+ERROR:root:Failed to download PDF: 401 Client Error: Unauthorized for url: https://eagerapi.print.com/order-items/6001168289-1/production-file?designId=cd5e98ae-145d-4963-9f8c-56a8c0e558a2
+ERROR:root:Failed to download PDF: 401 Client Error: Unauthorized for url: https://eagerapi.print.com/order-items/6001168289-1/jobsheet
+order_item_object.name = 'labels-on-roll'
+Processing order with ReferenceAtCustomer: 6001168289-1_1
+  - OrderQuantity: 500
+E:\CERM_hp_json_test_files\6001168289-1_1\6001168289-1_1.json
+process order item  Exception str(e) = "[WinError 1326] The user name or password is incorrect: 'K:\\\\'"
+INFO:     127.0.0.1:64810 - "POST /collect_printcom_order_item HTTP/1.1" 200 OK
+INFO:     127.0.0.1:64832 - "POST /collect_printcom_order_item HTTP/1.1" 422 Unprocessable Entity
+INFO:     127.0.0.1:64950 - "POST /send-token/ HTTP/1.1" 200 OK
+INFO:     127.0.0.1:64955 - "POST /send-token/ HTTP/1.1" 200 OK
+INFO:     127.0.0.1:64960 - "POST /collect_printcom_order_item HTTP/1.1" 422 Unprocessable Entity
+INFO:     127.0.0.1:64967 - "POST /collect_printcom_order_item HTTP/1.1" 422 Unprocessable Entity
+INFO:     127.0.0.1:64981 - "POST /collect_printcom_order_item HTTP/1.1" 422 Unprocessable Entity
+INFO:     127.0.0.1:64992 - "POST /collect_printcom_order_item HTTP/1.1" 422 Unprocessable Entity
+INFO:root:Design 1 for order 6001171215-1 downloaded to E:\CERM_hp_json_test_files\6001171215-1_1.
+INFO:root:Jobsheet file for order 6001171215-1 downloaded to E:\CERM_hp_json_test_files\6001171215-1_1.
+order_item_object.name = 'labels-on-roll'
+Processing order with ReferenceAtCustomer: 6001171215-1_1
+  - OrderQuantity: 100
+E:\CERM_hp_json_test_files\6001171215-1_1\6001171215-1_1.json
+process order item  Exception str(e) = "[WinError 1326] The user name or password is incorrect: 'K:\\\\'"
+INFO:     127.0.0.1:65002 - "POST /collect_printcom_order_item HTTP/1.1" 200 OK
+INFO:root:Design 1 for order 6001171443-1 downloaded to E:\CERM_hp_json_test_files\6001171443-1_1.
+order_item_object.name = 'labels-on-roll'
+Processing order with ReferenceAtCustomer: 6001171443-1_1
+  - OrderQuantity: 1000
+E:\CERM_hp_json_test_files\6001171443-1_1\6001171443-1_1.json
+INFO:root:Jobsheet file for order 6001171443-1 downloaded to E:\CERM_hp_json_test_files\6001171443-1_1.
+process order item  Exception str(e) = "[WinError 1326] The user name or password is incorrect: 'K:\\\\'"
+INFO:     127.0.0.1:65063 - "POST /collect_printcom_order_item HTTP/1.1" 200 OK
+INFO:root:Design 1 for order 6001171485-1 downloaded to E:\CERM_hp_json_test_files\6001171485-1_1.
+order_item_object.name = 'labels-on-roll'
+Processing order with ReferenceAtCustomer: 6001171485-1_1
+  - OrderQuantity: 1600
+E:\CERM_hp_json_test_files\6001171485-1_1\6001171485-1_1.json
+INFO:root:Jobsheet file for order 6001171485-1 downloaded to E:\CERM_hp_json_test_files\6001171485-1_1.
+process order item  Exception str(e) = "[WinError 1326] The user name or password is incorrect: 'K:\\\\'"
+INFO:     127.0.0.1:65078 - "POST /collect_printcom_order_item HTTP/1.1" 200 OK
+INFO:root:Design 1 for order 6001171486-1 downloaded to E:\CERM_hp_json_test_files\6001171486-1_1.
+order_item_object.name = 'labels-on-roll'
+Processing order with ReferenceAtCustomer: 6001171486-1_1
+  - OrderQuantity: 3600
+E:\CERM_hp_json_test_files\6001171486-1_1\6001171486-1_1.json
+INFO:root:Jobsheet file for order 6001171486-1 downloaded to E:\CERM_hp_json_test_files\6001171486-1_1.
+process order item  Exception str(e) = "[WinError 1326] The user name or password is incorrect: 'K:\\\\'"
+INFO:     127.0.0.1:65090 - "POST /collect_printcom_order_item HTTP/1.1" 200 OK
+INFO:root:Design 1 for order 6001171494-1 downloaded to E:\CERM_hp_json_test_files\6001171494-1_1.
+INFO:root:Jobsheet file for order 6001171494-1 downloaded to E:\CERM_hp_json_test_files\6001171494-1_1.
+INFO:root:Design 2 for order 6001171494-1 downloaded to E:\CERM_hp_json_test_files\6001171494-1_2.
+INFO:root:Jobsheet file for order 6001171494-1 downloaded to E:\CERM_hp_json_test_files\6001171494-1_2.
+INFO:root:Design 3 for order 6001171494-1 downloaded to E:\CERM_hp_json_test_files\6001171494-1_3.
+INFO:root:Jobsheet file for order 6001171494-1 downloaded to E:\CERM_hp_json_test_files\6001171494-1_3.
+INFO:root:Design 4 for order 6001171494-1 downloaded to E:\CERM_hp_json_test_files\6001171494-1_4.
+INFO:root:Jobsheet file for order 6001171494-1 downloaded to E:\CERM_hp_json_test_files\6001171494-1_4.
+order_item_object.name = 'labels-on-roll'
+Processing order with ReferenceAtCustomer: 6001171494-1_1
+  - OrderQuantity: 250
+E:\CERM_hp_json_test_files\6001171494-1_1\6001171494-1_1.json
+process order item  Exception str(e) = "[WinError 1326] The user name or password is incorrect: 'K:\\\\'"
+INFO:     127.0.0.1:65106 - "POST /collect_printcom_order_item HTTP/1.1" 200 OK
+INFO:     127.0.0.1:49753 - "POST /send-token/ HTTP/1.1" 200 OK
+INFO:     127.0.0.1:49755 - "POST /send-token/ HTTP/1.1" 200 OK
+INFO:     127.0.0.1:49758 - "POST /send-token/ HTTP/1.1" 200 OK
+INFO:     127.0.0.1:49763 - "POST /collect_printcom_order_item HTTP/1.1" 422 Unprocessable Entity
+INFO:     127.0.0.1:49769 - "POST /collect_printcom_order_item HTTP/1.1" 422 Unprocessable Entity
+INFO:     127.0.0.1:49772 - "POST /collect_printcom_order_item HTTP/1.1" 422 Unprocessable Entity
+INFO:     127.0.0.1:49775 - "POST /collect_printcom_order_item HTTP/1.1" 422 Unprocessable Entity
+INFO:root:Design 1 for order 6001171183-1 downloaded to E:\CERM_hp_json_test_files\6001171183-1_1.
+INFO:root:Jobsheet file for order 6001171183-1 downloaded to E:\CERM_hp_json_test_files\6001171183-1_1.
+INFO:root:Design 2 for order 6001171183-1 downloaded to E:\CERM_hp_json_test_files\6001171183-1_2.
+order_item_object.name = 'labels-on-roll'
+Processing order with ReferenceAtCustomer: 6001171183-1_1
+  - OrderQuantity: 500
+E:\CERM_hp_json_test_files\6001171183-1_1\6001171183-1_1.json
+INFO:root:Jobsheet file for order 6001171183-1 downloaded to E:\CERM_hp_json_test_files\6001171183-1_2.
+process order item  Exception str(e) = "[WinError 1326] The user name or password is incorrect: 'K:\\\\'"
+INFO:     127.0.0.1:49778 - "POST /collect_printcom_order_item HTTP/1.1" 200 OK
+INFO:root:Design 1 for order 6001171222-1 downloaded to E:\CERM_hp_json_test_files\6001171222-1_1.
+INFO:root:Jobsheet file for order 6001171222-1 downloaded to E:\CERM_hp_json_test_files\6001171222-1_1.
+INFO:root:Design 2 for order 6001171222-1 downloaded to E:\CERM_hp_json_test_files\6001171222-1_2.
+INFO:root:Jobsheet file for order 6001171222-1 downloaded to E:\CERM_hp_json_test_files\6001171222-1_2.
+INFO:root:Design 3 for order 6001171222-1 downloaded to E:\CERM_hp_json_test_files\6001171222-1_3.
+INFO:root:Jobsheet file for order 6001171222-1 downloaded to E:\CERM_hp_json_test_files\6001171222-1_3.
+INFO:root:Design 4 for order 6001171222-1 downloaded to E:\CERM_hp_json_test_files\6001171222-1_4.
+INFO:root:Jobsheet file for order 6001171222-1 downloaded to E:\CERM_hp_json_test_files\6001171222-1_4.
+INFO:root:Design 5 for order 6001171222-1 downloaded to E:\CERM_hp_json_test_files\6001171222-1_5.
+order_item_object.name = 'labels-on-roll'
+Processing order with ReferenceAtCustomer: 6001171222-1_1
+  - OrderQuantity: 60
+E:\CERM_hp_json_test_files\6001171222-1_1\6001171222-1_1.json
+INFO:root:Jobsheet file for order 6001171222-1 downloaded to E:\CERM_hp_json_test_files\6001171222-1_5.
+process order item  Exception str(e) = "[WinError 1326] The user name or password is incorrect: 'K:\\\\'"
+INFO:     127.0.0.1:49805 - "POST /collect_printcom_order_item HTTP/1.1" 200 OK
+INFO:root:Design 1 for order 6001171503-1 downloaded to E:\CERM_hp_json_test_files\6001171503-1_1.
+INFO:root:Jobsheet file for order 6001171503-1 downloaded to E:\CERM_hp_json_test_files\6001171503-1_1.
+order_item_object.name = 'sticker-sheets'
+process order item  Exception str(e) = "'copies_per_roll'"
+INFO:     127.0.0.1:49842 - "POST /collect_printcom_order_item HTTP/1.1" 200 OK
+INFO:root:Design 1 for order 6001171503-2 downloaded to E:\CERM_hp_json_test_files\6001171503-2_1.
+order_item_object.name = 'sticker-sheets'
+process order item  Exception str(e) = "'copies_per_roll'"
+INFO:     127.0.0.1:49849 - "POST /collect_printcom_order_item HTTP/1.1" 200 OK
+INFO:root:Jobsheet file for order 6001171503-2 downloaded to E:\CERM_hp_json_test_files\6001171503-2_1.
+INFO:     127.0.0.1:50949 - "POST /send-token/ HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51886 - "POST /send-token/ HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52663 - "POST /send-token/ HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53389 - "POST /send-token/ HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54093 - "POST /send-token/ HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54096 - "POST /send-token/ HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54099 - "POST /collect_printcom_order_item HTTP/1.1" 422 Unprocessable Entity
+INFO:     127.0.0.1:54102 - "POST /collect_printcom_order_item HTTP/1.1" 422 Unprocessable Entity
+INFO:     127.0.0.1:54105 - "POST /collect_printcom_order_item HTTP/1.1" 422 Unprocessable Entity
+INFO:     127.0.0.1:54111 - "POST /collect_printcom_order_item HTTP/1.1" 422 Unprocessable Entity
+INFO:root:Design 1 for order 6001171554-1 downloaded to E:\CERM_hp_json_test_files\6001171554-1_1.
+order_item_object.name = 'labels-on-roll'
+Processing order with ReferenceAtCustomer: 6001171554-1_1
+  - OrderQuantity: 500
+E:\CERM_hp_json_test_files\6001171554-1_1\6001171554-1_1.json
+process order item  Exception str(e) = "[WinError 3] The system cannot find the path specified: 'K:\\\\'"
+INFO:     127.0.0.1:54115 - "POST /collect_printcom_order_item HTTP/1.1" 200 OK
+INFO:root:Jobsheet file for order 6001171554-1 downloaded to E:\CERM_hp_json_test_files\6001171554-1_1.
+INFO:root:Design 1 for order 6001171580-1 downloaded to E:\CERM_hp_json_test_files\6001171580-1_1.
+INFO:root:Jobsheet file for order 6001171580-1 downloaded to E:\CERM_hp_json_test_files\6001171580-1_1.
+process order item  Exception str(e) = "Address.__init__() got an unexpected keyword argument 'extraAddressLine'"
+INFO:     127.0.0.1:54125 - "POST /collect_printcom_order_item HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54964 - "POST /send-token/ HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55884 - "POST /send-token/ HTTP/1.1" 200 OK
+WARNING:  WatchFiles detected changes in 'paden\pad.py'. Reloading...
+INFO:     127.0.0.1:56752 - "POST /collect_printcom_order_item HTTP/1.1" 422 Unprocessable Entity
+INFO:     127.0.0.1:56755 - "POST /collect_printcom_order_item HTTP/1.1" 422 Unprocessable Entity
+INFO:     127.0.0.1:56760 - "POST /collect_printcom_order_item HTTP/1.1" 422 Unprocessable Entity
+INFO:     127.0.0.1:56765 - "POST /collect_printcom_order_item HTTP/1.1" 422 Unprocessable Entity
+INFO:     127.0.0.1:56806 - "POST /send-token/ HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56810 - "POST /collect_printcom_order_item HTTP/1.1" 422 Unprocessable Entity
+INFO:     127.0.0.1:56818 - "POST /collect_printcom_order_item HTTP/1.1" 422 Unprocessable Entity
+INFO:     127.0.0.1:56830 - "POST /collect_printcom_order_item HTTP/1.1" 422 Unprocessable Entity
+INFO:root:Design 1 for order 6001168237-1 downloaded to E:\CERM_hp_json_test_files\6001168237-1_1.
+order_item_object.name = 'labels-on-roll'
+Processing order with ReferenceAtCustomer: 6001168237-1_1
+  - OrderQuantity: 10000
+E:\CERM_hp_json_test_files\6001168237-1_1\6001168237-1_1.json
+process order item  Exception str(e) = "[WinError 3] The system cannot find the path specified: 'K:\\\\'"
+INFO:     127.0.0.1:56835 - "POST /collect_printcom_order_item HTTP/1.1" 200 OK
+INFO:root:Jobsheet file for order 6001168237-1 downloaded to E:\CERM_hp_json_test_files\6001168237-1_1.
+INFO:     127.0.0.1:56852 - "POST /collect_printcom_order_item HTTP/1.1" 422 Unprocessable Entity
+INFO:     127.0.0.1:56970 - "POST /collect_printcom_order_item HTTP/1.1" 422 Unprocessable Entity
+INFO:     127.0.0.1:56974 - "POST /collect_printcom_order_item HTTP/1.1" 422 Unprocessable Entity
+INFO:     127.0.0.1:56980 - "POST /collect_printcom_order_item HTTP/1.1" 422 Unprocessable Entity
+INFO:     127.0.0.1:56983 - "POST /collect_printcom_order_item HTTP/1.1" 422 Unprocessable Entity
+INFO:root:Design 1 for order 6001171580-1 downloaded to E:\CERM_hp_json_test_files\6001171580-1_1.
+process order item  Exception str(e) = "Address.__init__() got an unexpected keyword argument 'extraAddressLine'"
+INFO:     127.0.0.1:56987 - "POST /collect_printcom_order_item HTTP/1.1" 200 OK
+INFO:root:Jobsheet file for order 6001171580-1 downloaded to E:\CERM_hp_json_test_files\6001171580-1_1.

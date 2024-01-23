@@ -1,0 +1,164 @@
+{
+    "sku": "labels-on-roll",
+    "name": "labels-on-roll",
+    "_links": {
+        "self": {
+            "href": "https://eagerapi.print.com/order-items/6001209537-2"
+        },
+        "jobsheet": {
+            "href": "https://eagerapi.print.com/order-items/6001209537-2/jobsheet"
+        },
+        "productionFile": {
+            "href": "https://eagerapi.print.com/order-items/6001209537-2/production-file"
+        },
+        "design_1": {
+            "href": "https://eagerapi.print.com/order-items/6001209537-2/production-file?designId=31e2a0e3-c081-4d8e-893a-fe534cee119a"
+        }
+    },
+    "status": "SENTTOSUPPLIER",
+    "created": "2024-01-23T10:12:35.000Z",
+    "designs": [
+        {
+            "id": "31e2a0e3-c081-4d8e-893a-fe534cee119a",
+            "copies": 100,
+            "href": "https://eagerapi.print.com/order-items/6001209537-2/production-file?designId=31e2a0e3-c081-4d8e-893a-fe534cee119a",
+            "shipments": [
+                {
+                    "shipmentId": 1590339,
+                    "addressId": 1790710,
+                    "copies": 100,
+                    "deliveryDate": "2024-01-29 17:00:00",
+                    "latestDeliveryDate": "2024-01-30 17:00:00",
+                    "method": "PNA_3085_ZONDERHANDTEKENING",
+                    "productDiscount": 0,
+                    "shippingDiscount": 0,
+                    "normalPrice": 6.5,
+                    "address": {
+                        "firstName": "Ren\u00e9",
+                        "lastName": "Rozijn",
+                        "companyName": "Drukkerij Rozijn Repro",
+                        "telephone": "31316225611",
+                        "id": 1790710,
+                        "fullstreet": "Oude Raadhuisstraat",
+                        "houseNumber": "2",
+                        "city": "Didam",
+                        "country": "NL",
+                        "postcode": "6941AK",
+                        "street": "Oude Raadhuisstraat"
+                    },
+                    "tax": 1.37,
+                    "combinedShipmentDiscount": 0,
+                    "combinedShipmentId": null,
+                    "storageLocation": null,
+                    "pickedUpBy": null,
+                    "printCustomLabel": true,
+                    "shippingLabelUrl": "",
+                    "orderItemsWithSameShippingAddress": []
+                }
+            ]
+        }
+    ],
+    "layouts": [],
+    "options": {
+        "copies": "100",
+        "urgency": "standard",
+        "numberOfSheets": "100",
+        "sheetWidth": "303",
+        "planoHeight": "23",
+        "squareMM": "2070",
+        "output_direction": "outer_0",
+        "printtype": "40",
+        "roll_diameter": "40_mm",
+        "finish": "single_sided_vernis_gloss",
+        "total_length": "2600",
+        "number_of_rolls": "divide_equally",
+        "height": "23",
+        "roll_length": "...",
+        "shape": "rectangle_sticker__2mm_rounded_corners",
+        "planoWidth": "90",
+        "copies_per_roll": "...",
+        "bleed": "1.5",
+        "squareMMTotal": "207000",
+        "printingmethod": "digital",
+        "handling_costs": "handling_roll_labels",
+        "size": "custom",
+        "material": "85gr_zelfklevend_papier_zilver_glans",
+        "type_glue": "permanent",
+        "width": "90",
+        "sheetHeight": "2600",
+        "numberOfDesigns": "1"
+    },
+    "orderId": 1212434,
+    "variants": [],
+    "shipments": [
+        {
+            "shipmentId": 1590339,
+            "addressId": 1790710,
+            "copies": 100,
+            "deliveryDate": "2024-01-29 17:00:00",
+            "latestDeliveryDate": "2024-01-30 17:00:00",
+            "method": "PNA_3085_ZONDERHANDTEKENING",
+            "productDiscount": 0,
+            "shippingDiscount": 0,
+            "normalPrice": 6.5,
+            "address": {
+                "firstName": "Ren\u00e9",
+                "lastName": "Rozijn",
+                "companyName": "Drukkerij Rozijn Repro",
+                "telephone": "31316225611",
+                "id": 1790710,
+                "fullstreet": "Oude Raadhuisstraat",
+                "houseNumber": "2",
+                "city": "Didam",
+                "country": "NL",
+                "postcode": "6941AK",
+                "street": "Oude Raadhuisstraat"
+            },
+            "tax": 1.37,
+            "combinedShipmentDiscount": 0,
+            "combinedShipmentId": null,
+            "storageLocation": null,
+            "pickedUpBy": null,
+            "printCustomLabel": true,
+            "shippingLabelUrl": "",
+            "orderItemsWithSameShippingAddress": [],
+            "designs": [
+                {
+                    "id": "31e2a0e3-c081-4d8e-893a-fe534cee119a",
+                    "copies": 100,
+                    "href": "https://eagerapi.print.com/order-items/6001209537-2/production-file?designId=31e2a0e3-c081-4d8e-893a-fe534cee119a"
+                }
+            ]
+        }
+    ],
+    "childItems": [],
+    "pickupDate": "2024-01-26T16:00:00.000Z",
+    "printjobId": "d2fbb440-53b7-4162-8b87-b3c26d30b545",
+    "orderItemId": 1555509,
+    "orderNumber": 6001209537,
+    "urgencyCost": 0,
+    "descriptions": {
+        "full": "100 Stickers op rol 90x23mm 85 g/m\u00b2 zelfklevend papier zilver glans, 4/0 Full colour digital, Rolafwikkeling 2, Kerndiameter rol 40 mm, Enkelzijdig glansvernis, 2600, Gelijkwaardig opdelen (aantal stickers per rol vermeld op sluitsticker), ..., Rechthoekig (2 mm afgeronde hoeken), ..., Handeling, Permanent",
+        "size": "custom",
+        "printing": "digital 40",
+        "material": "85gr_zelfklevend_papier_zilver_glans",
+        "designs": 1,
+        "finishing": "100, 303, 2070, outer_0, 40_mm, single_sided_vernis_gloss, 2600, divide_equally, ..., rectangle_sticker__2mm_rounded_corners, ..., 1.5, 207000, handling_roll_labels, permanent, 2600",
+        "shipping": "Verzenden met PNA 3085_ZONDERHANDTEKENING naar 1 adres"
+    },
+    "supplierCode": "VE",
+    "pantoneColors": [],
+    "purchasePrice": 26.2,
+    "quantity": 1,
+    "submissionDate": "2024-01-23T17:00:00.000Z",
+    "deliveryPromise": 0,
+    "orderItemNumber": "6001209537-2",
+    "supplierChecklist": [],
+    "deliveryPromiseCost": 0,
+    "designsHasSameAmount": true,
+    "reprintCreditUrgency": 0,
+    "reprintCreditDeliveryPromise": 0,
+    "note": null,
+    "reprintOrderItemNumber": "",
+    "preferredLanguage": null
+}
