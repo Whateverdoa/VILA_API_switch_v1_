@@ -5,6 +5,8 @@ import json
 import logging
 from pathlib import Path
 
+from loguru import logger
+
 logging.basicConfig(level=logging.INFO, filename='logfilename.log', filemode='a', format='%(asctime)s - %(levelname)s - %(message)s')
 
 
@@ -42,7 +44,7 @@ class FileDownloader:
                 filename.write_bytes(pdf_response.content)
                 return True
         except (requests.RequestException, json.JSONDecodeError) as e:
-            logging.error(f"Failed to download PDF: {e}")
+            logger.error(f"Failed to download PDF: {e}")
             return False
 
     def download_order_files(self, order_data, download_path=Path("./downloads")):
@@ -59,7 +61,7 @@ class FileDownloader:
         order_id = links.get("self", {}).get("href", "").split("/")[-1]
 
         if not order_id:
-            logging.warning("Skipping order due to missing '_links.self.href'")
+            logger.error("Skipping order due to missing '_links.self.href'")
             return
         downloaded_files = []
         # Download design files
@@ -69,7 +71,7 @@ class FileDownloader:
             design_url = design.get("href")
             if design_url:
                 if self.download_pdf(design_url, design_folder / f"{order_id}_design_{i}.pdf"):
-                    logging.info(f"Design {i} for order {order_id} downloaded to {design_folder}.")
+                    logger.info(f"Design {i} for order {order_id} downloaded to {design_folder}.")
 
             # Download jobsheet file inside the design folder
             jobsheet_file_url = links.get("jobsheet", {}).get("href")
@@ -77,7 +79,7 @@ class FileDownloader:
                 jobsheet_folder = download_path / f'{order_id}_{i}'
                 jobsheet_folder.mkdir(parents=True, exist_ok=True)
                 if self.download_pdf(jobsheet_file_url, jobsheet_folder / f"{order_id}_jobsheet_{i}.pdf"):
-                    logging.info(f"Jobsheet file for order {order_id} downloaded to {jobsheet_folder}.")
+                    logger.info(f"Jobsheet file for order {order_id} downloaded to {jobsheet_folder}.")
                 downloaded_files.append(
                     (design_folder / f"{order_id}_design_{i}.pdf", jobsheet_folder / f"{order_id}_jobsheet_{i}.pdf"))
 
@@ -98,7 +100,7 @@ class FileDownloader:
         order_id = links.get("self", {}).get("href", "").split("/")[-1]
 
         if not order_id:
-            logging.warning("Skipping order due to missing '_links.self.href'")
+            logger.warning("Skipping order due to missing '_links.self.href'")
             return
         downloaded_files = []
         # Download design files
@@ -114,7 +116,7 @@ class FileDownloader:
                 if self.download_pdf(design_url, design_file_path):
                     additional_file_path = additional_download_path / f"{order_id}_{i}_ex_1.pdf"
                     shutil.copy(design_file_path, additional_file_path)  # Copy to additional location
-                    logging.info(f"Design {i} for order {order_id} downloaded to {design_folder} and copied to {additional_design_folder}.")
+                    logger.info(f"Design {i} for order {order_id} downloaded to {design_folder} and copied to {additional_design_folder}.")
 
             # Download jobsheet file inside the design folder
             jobsheet_file_url = links.get("jobsheet", {}).get("href")
@@ -122,7 +124,7 @@ class FileDownloader:
                 jobsheet_file_path = design_folder / f"{order_id}_jobsheet_{i}.pdf"
                 if self.download_pdf(jobsheet_file_url, jobsheet_file_path):
                     # shutil.copy(jobsheet_file_path, additional_design_folder)  # Copy to additional location
-                    logging.info(f"Jobsheet file for order {order_id} downloaded to {design_folder} and NOT copied to {additional_design_folder}.")
+                    logger.info(f"Jobsheet file for order {order_id} downloaded to {design_folder} and NOT copied to {additional_design_folder}.")
                 downloaded_files.append((design_file_path, jobsheet_file_path))
 
         return downloaded_files

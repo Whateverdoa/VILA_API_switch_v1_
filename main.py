@@ -15,7 +15,7 @@ from models.models_print_dot_com.models_pdc import OrderItem
 from models.models_vila.models_vila import Token
 from paden.pad import DOWNLOAD_PAD_VILA_TO_ESKO, DOWNLOAD_PAD, log_pad
 
-logging.basicConfig(level=logging.INFO,filename="printdotcom.log", format="%(asctime)s [%(levelname)s]: %(message)s")
+# logging.basicConfig(level=logging.INFO,filename="printdotcom.log", format="%(asctime)s [%(levelname)s]: %(message)s")
 
 from loguru import logger
 
@@ -58,7 +58,7 @@ def retrieve_token():
 @app.post("/send-token/")
 async def send_token(token_data: Token):
     token_store['token'] = token_data.token
-    logging.info(f"Token received {get_today_date_str()}")
+    logger.info(f"Token received {get_today_date_str()}")
     return {"message": f"Token received {get_today_date_str()}"}
 
 
@@ -121,13 +121,15 @@ async def collect_order_item(order_item: OrderItem, token: str = Depends(retriev
         file_path = Path("order_item.json")
         with file_path.open("w") as f:
             f.write(order_item_json)
-            logging.info(f"Order item {order_item.order_item} collected successfully")
+            logger.info(f"Order item {order_item.order_item} collected successfully")
 
         return JSONResponse(content={"message": "Order item collected successfully"}, status_code=200)
 
     except Exception as e:
-
-        return HTTPException(status_code=500, detail=str(e))
+        logger.warning(f"Error: {e}")
+        exception = HTTPException(status_code=500, detail=str(e))
+        logger.error(f"HTTPException: {exception.detail}")
+        return exception
 
 
 # todo add a route to collect a list of order items for helloprint
